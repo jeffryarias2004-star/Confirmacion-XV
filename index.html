@@ -884,7 +884,7 @@
   }
 
   // Botón "No podré asistir": directo a WhatsApp
-  document.getElementById('btnNo').href = link('¡Hola Jennifer! Lamentablemente NO podré asistir a los XV años de Guadalupe.');
+  document.getElementById('btnNo').href = link('¡Hola Jennifer! Lamentablemente no podré asistir a los XV años de Guadalupe, le agradezco por la invitación.');
 
   // Botón "Sí voy a asistir": abre la ventana de preguntas
   var modal = document.getElementById('rsvpModal');
@@ -932,7 +932,7 @@
   function sendCount() {
     var n = parseInt(input.value, 10);
     if (!(n >= 1 && n <= 99)) { errorBox.hidden = false; input.focus(); return; }
-    openWhatsApp(link(BASE + '. Cantidad de personas que asistirán: ' + n + '.'));
+    openWhatsApp(link(BASE + '. Asistiremos ' + n + 'personas. '));
     closeModal();
   }
   document.getElementById('btnSendCount').addEventListener('click', sendCount);

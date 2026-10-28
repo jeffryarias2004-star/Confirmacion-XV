@@ -1,12 +1,15 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Sofia Guadalupe · Mis XV Años</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
 <style>
   :root {
     --bg-cream: #FAF6F0;
@@ -73,10 +76,11 @@
     z-index: 1;
     overflow: visible;
   }
-  .deco-tl { top: 0;    left: 0;  width: 112px; }
+
+  .deco-tl { top: 0; left: 0; width: 112px; }
   .deco-tr { top: 70px; right: 8px; width: 52px; }
   .deco-br { bottom: 0; right: 0; width: 138px; }
-  .deco-bl { bottom: 0; left: 0;  width: 92px; }
+  .deco-bl { bottom: 0; left: 0; width: 92px; }
 
   .card-content {
     position: relative;
@@ -333,6 +337,7 @@
     gap: 6px;
     margin-top: 4px;
   }
+
   .rsvp-label {
     font-family: 'Cinzel', serif;
     font-size: 0.72rem;
@@ -341,6 +346,7 @@
     font-weight: 600;
     margin: 0;
   }
+
   .rsvp-name {
     width: 100%;
     font-family: 'Cormorant Garamond', serif;
@@ -353,8 +359,18 @@
     padding: 6px 14px;
     outline: none;
   }
-  .rsvp-name:focus { border-color: var(--gold-main); box-shadow: 0 0 0 2px rgba(197,155,39,.25); }
-  .rsvp-buttons { display: flex; gap: 8px; width: 100%; }
+
+  .rsvp-name:focus {
+    border-color: var(--gold-main);
+    box-shadow: 0 0 0 2px rgba(197,155,39,.25);
+  }
+
+  .rsvp-buttons {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+  }
+
   .rsvp-btn {
     flex: 1;
     font-family: 'Cinzel', serif;
@@ -368,9 +384,18 @@
     border: 1.5px solid var(--gold-main);
     cursor: pointer;
   }
-  .rsvp-yes { background: linear-gradient(135deg, var(--gold-dark), var(--gold-main)); color: #fff; }
-  .rsvp-no  { background: transparent; color: var(--gold-dark); }
-  .rsvp-btn:focus-visible { outline: 2px solid var(--green-eucalyptus); outline-offset: 2px; }
+
+  .rsvp-yes {
+    background: linear-gradient(135deg, var(--gold-dark), var(--gold-main));
+    color: #fff;
+  }
+
+  .rsvp-no { background: transparent; color: var(--gold-dark); }
+
+  .rsvp-btn:focus-visible {
+    outline: 2px solid var(--green-eucalyptus);
+    outline-offset: 2px;
+  }
 
   .rsvp-hint {
     font-family: 'Cormorant Garamond', serif;
@@ -379,6 +404,7 @@
     color: #555;
     margin: -2px 0 2px;
   }
+
   .rsvp-btn {
     display: flex !important;
     align-items: center;
@@ -389,16 +415,38 @@
     transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
     -webkit-tap-highlight-color: transparent;
   }
-  .rsvp-btn .wa-icon { width: 16px; height: 16px; flex-shrink: 0; }
-  .rsvp-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 14px rgba(142,107,18,.38); }
-  .rsvp-btn:active { transform: translateY(1px) scale(.98); box-shadow: 0 1px 3px rgba(142,107,18,.3); }
+
+  .rsvp-btn .wa-icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+  }
+
+  .rsvp-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(142,107,18,.38);
+  }
+
+  .rsvp-btn:active {
+    transform: translateY(1px) scale(.98);
+    box-shadow: 0 1px 3px rgba(142,107,18,.3);
+  }
+
   .rsvp-no:hover { background: #F4ECE1; }
   .rsvp-yes { animation: rsvpPulse 2.4s ease-in-out infinite; }
+
   @keyframes rsvpPulse {
-    0%,100% { box-shadow: 0 3px 8px rgba(142,107,18,.28), 0 0 0 0 rgba(197,155,39,.45); }
-    50%     { box-shadow: 0 3px 8px rgba(142,107,18,.28), 0 0 0 7px rgba(197,155,39,0); }
+    0%,100% {
+      box-shadow: 0 3px 8px rgba(142,107,18,.28), 0 0 0 0 rgba(197,155,39,.45);
+    }
+    50% {
+      box-shadow: 0 3px 8px rgba(142,107,18,.28), 0 0 0 7px rgba(197,155,39,0);
+    }
   }
-  @media (prefers-reduced-motion: reduce) { .rsvp-yes { animation: none; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .rsvp-yes { animation: none; }
+  }
 
   .title-mis-xv {
     font-size: 2.6rem !important;
@@ -409,6 +457,7 @@
     gap: 12px;
     width: 100%;
   }
+
   .title-mis-xv span {
     padding: 2px 4px 6px;
     background: linear-gradient(135deg, var(--gold-dark) 0%, var(--gold-main) 45%, var(--gold-light) 70%, var(--gold-main) 100%);
@@ -417,13 +466,17 @@
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(0 1px 0 rgba(232,207,122,.5));
   }
+
   .title-mis-xv::before, .title-mis-xv::after {
     content: '';
     width: 42px;
     height: 1px;
     background: linear-gradient(90deg, transparent, var(--gold-main));
   }
-  .title-mis-xv::after { background: linear-gradient(270deg, transparent, var(--gold-main)); }
+
+  .title-mis-xv::after {
+    background: linear-gradient(270deg, transparent, var(--gold-main));
+  }
 
   .date-main-row { gap: 30px !important; }
   .date-divider-vertical { height: 40px !important; }
@@ -442,10 +495,16 @@
   .date-number { width: 80px; text-align: center; flex-shrink: 0; }
   .date-right-col { margin-left: 18px; }
 
-  .footer-text { font-size: 0.8rem !important; line-height: 1.12 !important; max-width: 350px; margin: 0 !important; }
-
   .footer-text {
-    font-size: 0.86rem !important;
+    font-size: 0.8rem !important;
+    line-height: 1.12 !important;
+    max-width: 350px;
+    margin: 0 !important;
+  }
+
+  /* CAMBIO 2: Texto de confirmación ligeramente más grande */
+  .footer-text {
+    font-size: 0.95rem !important;
     line-height: 1.3 !important;
     max-width: 340px;
     margin: 6px 0 8px !important;
@@ -453,16 +512,34 @@
     color: #4a4136;
     text-wrap: balance;
   }
-  .footer-text b { font-style: normal; font-weight: 700; color: var(--gold-dark); }
 
-  /* si la pantalla es baja, la tarjeta se desplaza en vez de cortar el contenido */
+  .footer-text b {
+    font-style: normal;
+    font-weight: 700;
+    color: var(--gold-dark);
+  }
+
+  /* Si la pantalla es baja, la tarjeta se desplaza en vez de cortar el contenido */
   .card-container { overflow-y: auto; scrollbar-width: none; }
   .card-container::-webkit-scrollbar { display: none; }
   .card-content { height: auto; min-height: 100%; gap: 4px; }
 
   /* La tarjeta crece con su contenido: el marco dorado y las hojas siempre la rodean completa */
-  html { height: auto !important; min-height: 100%; overflow-x: hidden !important; overflow-y: auto !important; display: block !important; }
-  body { height: auto !important; min-height: 100vh; overflow: visible !important; align-items: center; }
+  html {
+    height: auto !important;
+    min-height: 100%;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    display: block !important;
+  }
+
+  body {
+    height: auto !important;
+    min-height: 100vh;
+    overflow: visible !important;
+    align-items: center;
+  }
+
   .card-container {
     height: auto !important;
     min-height: min(100vh, 820px);
@@ -470,7 +547,14 @@
     overflow: hidden !important;
     padding: 30px 28px 36px !important;
   }
-  .card-content { height: auto !important; min-height: 0 !important; gap: 8px !important; padding: 0 !important; }
+
+  .card-content {
+    height: auto !important;
+    min-height: 0 !important;
+    gap: 8px !important;
+    padding: 0 !important;
+  }
+
   .deco-br { width: 112px !important; }
   .deco-bl { width: 78px !important; }
   .footer-text { max-width: 320px !important; }
@@ -478,128 +562,302 @@
 
   /* ---------- Ventana de confirmación ---------- */
   .modal-overlay {
-    position: fixed; inset: 0; z-index: 100;
-    display: flex; align-items: center; justify-content: center;
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
     background: rgba(44,38,30,.55);
-    -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
   }
+
   .modal-overlay[hidden] { display: none; }
+
   .modal {
     position: relative;
-    width: 100%; max-width: 340px;
+    width: 100%;
+    max-width: 340px;
     background: var(--bg-cream);
     border: 1.5px solid var(--gold-main);
-    outline: 1px solid var(--gold-light); outline-offset: -7px;
+    outline: 1px solid var(--gold-light);
+    outline-offset: -7px;
     border-radius: 4px;
     padding: 30px 24px 22px;
     text-align: center;
     box-shadow: 0 18px 40px rgba(0,0,0,.3);
     animation: modalIn .25s ease both;
   }
-  @keyframes modalIn { from { opacity: 0; transform: translateY(10px) scale(.97); } to { opacity: 1; transform: none; } }
-  @media (prefers-reduced-motion: reduce) { .modal { animation: none; } }
+
+  @keyframes modalIn {
+    from { opacity: 0; transform: translateY(10px) scale(.97); }
+    to { opacity: 1; transform: none; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .modal { animation: none; }
+  }
+
   .modal-kicker {
-    font-family: 'Cinzel', serif; font-size: .72rem; letter-spacing: .18em;
-    color: var(--text-gold); font-weight: 600; margin: 0 0 6px;
+    font-family: 'Cinzel', serif;
+    font-size: .72rem;
+    letter-spacing: .18em;
+    color: var(--text-gold);
+    font-weight: 600;
+    margin: 0 0 6px;
   }
-  .modal-heart { color: var(--gold-main); font-size: .9rem; margin: 0 0 8px; }
+
+  .modal-heart {
+    color: var(--gold-main);
+    font-size: .9rem;
+    margin: 0 0 8px;
+  }
+
   .modal-question {
-    font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 500;
-    font-size: 1.3rem; line-height: 1.25; color: var(--text-dark); margin: 0 0 18px;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.25;
+    color: var(--text-dark);
+    margin: 0 0 18px;
   }
-  .modal-actions { display: flex; flex-direction: column; gap: 10px; }
+
+  .modal-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
   .modal-btn {
-    display: flex; align-items: center; justify-content: center; gap: 8px;
-    width: 100%; padding: 12px 10px; border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 12px 10px;
+    border-radius: 999px;
     border: 1.5px solid var(--gold-main);
-    font-family: 'Cinzel', serif; font-size: .74rem; font-weight: 700; letter-spacing: .08em;
-    cursor: pointer; transition: transform .15s ease, box-shadow .15s ease;
+    font-family: 'Cinzel', serif;
+    font-size: .74rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+    cursor: pointer;
+    transition: transform .15s ease, box-shadow .15s ease;
   }
+
   .modal-btn:active { transform: scale(.98); }
-  .modal-btn:focus-visible, .modal-link:focus-visible { outline: 2px solid var(--green-eucalyptus); outline-offset: 2px; }
-  .modal-btn-primary { background: linear-gradient(135deg, var(--gold-dark), var(--gold-main)); color: #fff; box-shadow: 0 3px 8px rgba(142,107,18,.28); }
-  .modal-btn-secondary { background: transparent; color: var(--gold-dark); }
+
+  .modal-btn:focus-visible, .modal-link:focus-visible {
+    outline: 2px solid var(--green-eucalyptus);
+    outline-offset: 2px;
+  }
+
+  .modal-btn-primary {
+    background: linear-gradient(135deg, var(--gold-dark), var(--gold-main));
+    color: #fff;
+    box-shadow: 0 3px 8px rgba(142,107,18,.28);
+  }
+
+  .modal-btn-secondary {
+    background: transparent;
+    color: var(--gold-dark);
+  }
+
   .modal-btn .wa-icon { width: 16px; height: 16px; }
+
   .modal-link {
-    margin-top: 14px; background: none; border: 0; cursor: pointer;
-    font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: .95rem;
-    color: #6b6257; text-decoration: underline;
+    margin-top: 14px;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: .95rem;
+    color: #6b6257;
+    text-decoration: underline;
   }
+
   .modal-input {
-    width: 100%; text-align: center;
-    font-family: 'Cinzel', serif; font-size: 1.8rem; font-weight: 700; color: var(--text-dark);
-    background: #F4ECE1; border: 1px solid var(--gold-light); border-radius: 12px;
-    padding: 8px 10px; margin-bottom: 6px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    background: #F4ECE1;
+    border: 1px solid var(--gold-light);
+    border-radius: 12px;
+    padding: 8px 10px;
+    margin-bottom: 6px;
   }
-  .modal-input:focus { border-color: var(--gold-main); box-shadow: 0 0 0 3px rgba(197,155,39,.22); outline: none; }
-  .modal-hint { font-family: 'Cormorant Garamond', serif; font-size: .92rem; color: #6b6257; margin: 0 0 16px; }
-  .modal-error { font-family: 'Cormorant Garamond', serif; font-size: .95rem; font-weight: 600; color: #9a3b2e; margin: -8px 0 12px; }
+
+  .modal-input:focus {
+    border-color: var(--gold-main);
+    box-shadow: 0 0 0 3px rgba(197,155,39,.22);
+    outline: none;
+  }
+
+  .modal-hint {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: .92rem;
+    color: #6b6257;
+    margin: 0 0 16px;
+  }
+
+  .modal-error {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: .95rem;
+    font-weight: 600;
+    color: #9a3b2e;
+    margin: -8px 0 12px;
+  }
+
   .modal-error[hidden], .modal-step[hidden] { display: none; }
 
   /* ---------- Reproductor de música ---------- */
-  .music { width: 100%; max-width: 360px; margin: 2px 0; }
-  .music-title {
-    font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 1.25rem;
-    letter-spacing: .04em; color: var(--gold-dark); margin: 0 0 8px;
+  .music {
+    width: 100%;
+    max-width: 360px;
+    margin: 2px 0;
   }
-  .music-controls { display: flex; align-items: center; justify-content: center; gap: 12px; }
-  .music-line { flex: 1; height: 1px; background: linear-gradient(90deg, transparent, var(--gold-main)); }
-  .music-controls .music-line:last-child { background: linear-gradient(270deg, transparent, var(--gold-main)); }
-  .music button { font: inherit; border: 0; cursor: pointer; -webkit-tap-highlight-color: transparent; }
-  .music button:focus-visible { outline: 2px solid var(--green-eucalyptus); outline-offset: 3px; }
+
+  .music-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    letter-spacing: .04em;
+    color: var(--gold-dark);
+    margin: 0 0 8px;
+  }
+
+  .music-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .music-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold-main));
+  }
+
+  .music-controls .music-line:last-child {
+    background: linear-gradient(270deg, transparent, var(--gold-main));
+  }
+
+  .music button {
+    font: inherit;
+    border: 0;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .music button:focus-visible {
+    outline: 2px solid var(--green-eucalyptus);
+    outline-offset: 3px;
+  }
+
   .music-skip {
-    width: 34px; height: 34px; padding: 0; background: none; color: var(--gold-dark);
-    display: flex; align-items: center; justify-content: center; border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    background: none;
+    color: var(--gold-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
     transition: transform .15s ease, color .15s ease;
   }
+
   .music-skip:hover { color: var(--gold-main); }
   .music-skip:active { transform: scale(.88); }
-  .music-skip svg { width: 20px; height: 20px; fill: currentColor; }
+
+  .music-skip svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+
   .music-play {
-    width: 50px; height: 50px; padding: 0; border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border-radius: 50%;
     background: linear-gradient(135deg, var(--gold-light), var(--gold-main));
     color: #3a2d08;
-    display: flex; align-items: center; justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     box-shadow: 0 3px 10px rgba(142,107,18,.35);
     transition: transform .15s ease;
   }
+
   .music-play:active { transform: scale(.94); }
-  .music-play svg { width: 22px; height: 22px; fill: currentColor; }
+
+  .music-play svg {
+    width: 22px;
+    height: 22px;
+    fill: currentColor;
+  }
+
   .music-play .ic-pause { display: none; }
   .music.is-playing .music-play .ic-play { display: none; }
   .music.is-playing .music-play .ic-pause { display: block; }
   .music.is-playing .music-play { animation: musicPulse 2s ease-in-out infinite; }
+
   @keyframes musicPulse {
-    0%,100% { box-shadow: 0 3px 10px rgba(142,107,18,.35), 0 0 0 0 rgba(197,155,39,.45); }
-    50%     { box-shadow: 0 3px 10px rgba(142,107,18,.35), 0 0 0 9px rgba(197,155,39,0); }
+    0%,100% {
+      box-shadow: 0 3px 10px rgba(142,107,18,.35), 0 0 0 0 rgba(197,155,39,.45);
+    }
+    50% {
+      box-shadow: 0 3px 10px rgba(142,107,18,.35), 0 0 0 9px rgba(197,155,39,0);
+    }
   }
-  @media (prefers-reduced-motion: reduce) { .music.is-playing .music-play { animation: none; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .music.is-playing .music-play { animation: none; }
+  }
+
   .date-day { margin-bottom: 7px !important; }
 </style>
 </head>
+
 <body>
 
 <!-- Piezas reutilizables: hojas y gradientes -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
     <linearGradient id="gA" x1="0" y1="1" x2="0" y2="0">
-      <stop offset="0" stop-color="#4C6155"/><stop offset="1" stop-color="#93A698"/>
+      <stop offset="0" stop-color="#4C6155"/>
+      <stop offset="1" stop-color="#93A698"/>
     </linearGradient>
+
     <linearGradient id="gB" x1="0" y1="1" x2="0" y2="0">
-      <stop offset="0" stop-color="#7A9084"/><stop offset="1" stop-color="#C2CEC4"/>
+      <stop offset="0" stop-color="#7A9084"/>
+      <stop offset="1" stop-color="#C2CEC4"/>
     </linearGradient>
+
     <linearGradient id="gC" x1="0" y1="1" x2="0" y2="0">
-      <stop offset="0" stop-color="#C9A55A"/><stop offset="1" stop-color="#EEDDAE"/>
+      <stop offset="0" stop-color="#C9A55A"/>
+      <stop offset="1" stop-color="#EEDDAE"/>
     </linearGradient>
+
     <g id="lfA">
       <path d="M0 0C7-9 7-25 0-36C-7-25-7-9 0 0Z" fill="url(#gA)"/>
       <path d="M0-1V-30" stroke="#fff" stroke-opacity=".35" stroke-width=".7"/>
     </g>
+
     <g id="lfB">
       <path d="M0 0C7-9 7-25 0-36C-7-25-7-9 0 0Z" fill="url(#gB)"/>
       <path d="M0-1V-30" stroke="#fff" stroke-opacity=".45" stroke-width=".7"/>
     </g>
+
     <g id="lfC">
       <path d="M0 0C7-9 7-25 0-36C-7-25-7-9 0 0Z" fill="url(#gC)"/>
       <path d="M0-1V-30" stroke="#fff" stroke-opacity=".5" stroke-width=".7"/>
@@ -626,14 +884,20 @@
     <use href="#lfB" transform="translate(51 190) rotate(140) scale(1.2)"/>
     <use href="#lfA" transform="translate(51 190) rotate(215) scale(1.2)"/>
     <use href="#lfA" transform="translate(52 200) rotate(180) scale(1.1)"/>
+
     <!-- ramita dorada -->
     <path d="M2 150C14 112 30 72 64 30" stroke="#C59B27" stroke-width="1" stroke-opacity=".8"/>
     <g fill="#C59B27">
-      <circle cx="8" cy="132" r="2.4"/><circle cx="20" cy="108" r="2"/>
-      <circle cx="32" cy="86" r="2.6"/><circle cx="46" cy="62" r="2"/>
-      <circle cx="58" cy="42" r="2.4"/><circle cx="66" cy="28" r="1.8"/>
-      <circle cx="16" cy="140" r="1.6" fill="#E8CF7A"/><circle cx="40" cy="96" r="1.6" fill="#E8CF7A"/>
-      <circle cx="52" cy="72" r="1.5" fill="#E8CF7A"/><circle cx="26" cy="124" r="1.4" fill="#E8CF7A"/>
+      <circle cx="8" cy="132" r="2.4"/>
+      <circle cx="20" cy="108" r="2"/>
+      <circle cx="32" cy="86" r="2.6"/>
+      <circle cx="46" cy="62" r="2"/>
+      <circle cx="58" cy="42" r="2.4"/>
+      <circle cx="66" cy="28" r="1.8"/>
+      <circle cx="16" cy="140" r="1.6" fill="#E8CF7A"/>
+      <circle cx="40" cy="96" r="1.6" fill="#E8CF7A"/>
+      <circle cx="52" cy="72" r="1.5" fill="#E8CF7A"/>
+      <circle cx="26" cy="124" r="1.4" fill="#E8CF7A"/>
     </g>
   </svg>
 
@@ -641,10 +905,14 @@
   <svg class="deco deco-tr" viewBox="0 0 60 130" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M52 130C44 90 30 44 18 0" stroke="#C59B27" stroke-width="1" stroke-opacity=".8"/>
     <g fill="#C59B27">
-      <circle cx="49" cy="112" r="2.4"/><circle cx="44" cy="92" r="2"/>
-      <circle cx="38" cy="70" r="2.6"/><circle cx="31" cy="48" r="2"/>
-      <circle cx="24" cy="26" r="2.4"/><circle cx="18" cy="6" r="1.8"/>
-      <circle cx="54" cy="96" r="1.6" fill="#E8CF7A"/><circle cx="26" cy="60" r="1.6" fill="#E8CF7A"/>
+      <circle cx="49" cy="112" r="2.4"/>
+      <circle cx="44" cy="92" r="2"/>
+      <circle cx="38" cy="70" r="2.6"/>
+      <circle cx="31" cy="48" r="2"/>
+      <circle cx="24" cy="26" r="2.4"/>
+      <circle cx="18" cy="6" r="1.8"/>
+      <circle cx="54" cy="96" r="1.6" fill="#E8CF7A"/>
+      <circle cx="26" cy="60" r="1.6" fill="#E8CF7A"/>
       <circle cx="14" cy="36" r="1.5" fill="#E8CF7A"/>
     </g>
   </svg>
@@ -669,6 +937,7 @@
     <use href="#lfA" transform="translate(141 300) rotate(60) scale(1.6)"/>
     <use href="#lfA" transform="translate(146 340) rotate(-65) scale(1.4)"/>
     <use href="#lfC" transform="translate(146 340) rotate(62) scale(1.3)"/>
+
     <!-- rama dorada-beige secundaria -->
     <path d="M190 380C170 352 140 338 98 332" stroke="#C9A55A" stroke-width="1.2"/>
     <use href="#lfC" transform="translate(176 362) rotate(-30) scale(1.3)"/>
@@ -676,13 +945,18 @@
     <use href="#lfC" transform="translate(140 340) rotate(-30) scale(1.3)"/>
     <use href="#lfC" transform="translate(120 336) rotate(-100) scale(1.2)"/>
     <use href="#lfC" transform="translate(100 332) rotate(-80) scale(1.1)"/>
+
     <!-- puntitos dorados -->
     <path d="M178 330C170 280 160 230 150 180" stroke="#C59B27" stroke-width="1" stroke-opacity=".8"/>
     <g fill="#C59B27">
-      <circle cx="176" cy="312" r="2.4"/><circle cx="171" cy="286" r="2"/>
-      <circle cx="166" cy="260" r="2.6"/><circle cx="160" cy="232" r="2"/>
-      <circle cx="155" cy="206" r="2.4"/><circle cx="150" cy="182" r="1.8"/>
-      <circle cx="182" cy="296" r="1.6" fill="#E8CF7A"/><circle cx="170" cy="240" r="1.6" fill="#E8CF7A"/>
+      <circle cx="176" cy="312" r="2.4"/>
+      <circle cx="171" cy="286" r="2"/>
+      <circle cx="166" cy="260" r="2.6"/>
+      <circle cx="160" cy="232" r="2"/>
+      <circle cx="155" cy="206" r="2.4"/>
+      <circle cx="150" cy="182" r="1.8"/>
+      <circle cx="182" cy="296" r="1.6" fill="#E8CF7A"/>
+      <circle cx="170" cy="240" r="1.6" fill="#E8CF7A"/>
       <circle cx="158" cy="190" r="1.5" fill="#E8CF7A"/>
     </g>
   </svg>
@@ -691,10 +965,13 @@
   <svg class="deco deco-bl" viewBox="0 0 110 130" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M5 130C15 100 30 70 45 36" stroke="#C59B27" stroke-width="1" stroke-opacity=".8"/>
     <g fill="#C59B27">
-      <circle cx="10" cy="112" r="2.4"/><circle cx="18" cy="92" r="2"/>
-      <circle cx="28" cy="70" r="2.6"/><circle cx="37" cy="52" r="2"/>
+      <circle cx="10" cy="112" r="2.4"/>
+      <circle cx="18" cy="92" r="2"/>
+      <circle cx="28" cy="70" r="2.6"/>
+      <circle cx="37" cy="52" r="2"/>
       <circle cx="45" cy="36" r="2.2"/>
-      <circle cx="22" cy="104" r="1.6" fill="#E8CF7A"/><circle cx="34" cy="76" r="1.6" fill="#E8CF7A"/>
+      <circle cx="22" cy="104" r="1.6" fill="#E8CF7A"/>
+      <circle cx="34" cy="76" r="1.6" fill="#E8CF7A"/>
     </g>
     <use href="#lfC" transform="translate(8 130) rotate(18) scale(1.9)"/>
     <use href="#lfC" transform="translate(14 130) rotate(62) scale(1.7)"/>
@@ -730,16 +1007,31 @@
       <p class="music-title">Reproduce mi canción</p>
       <div class="music-controls">
         <span class="music-line"></span>
+
         <button type="button" class="music-skip" id="musicPrev" aria-label="Volver al inicio de la canción">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="2.6" height="14"/><path d="M20 5v14L8.5 12z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="4" y="5" width="2.6" height="14"/>
+            <path d="M20 5v14L8.5 12z"/>
+          </svg>
         </button>
+
         <button type="button" class="music-play" id="musicPlay" aria-label="Reproducir canción">
-          <svg class="ic-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
-          <svg class="ic-pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+          <svg class="ic-play" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M8 5v14l11-7z"/>
+          </svg>
+          <svg class="ic-pause" viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="6" y="5" width="4" height="14" rx="1"/>
+            <rect x="14" y="5" width="4" height="14" rx="1"/>
+          </svg>
         </button>
+
         <button type="button" class="music-skip" id="musicNext" aria-label="Adelantar 10 segundos">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="17.4" y="5" width="2.6" height="14"/><path d="M4 5v14l11.5-7z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="17.4" y="5" width="2.6" height="14"/>
+            <path d="M4 5v14l11.5-7z"/>
+          </svg>
         </button>
+
         <span class="music-line"></span>
       </div>
       <audio id="song" src="musica-xv.mp3" preload="none"></audio>
@@ -830,14 +1122,24 @@
     <div class="rsvp">
       <p class="rsvp-label">CONFIRMA TU ASISTENCIA</p>
       <div class="rsvp-buttons">
-        <a class="rsvp-btn rsvp-yes" id="btnYes" href="#" target="_blank" rel="noopener"><svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1 0 12.04 2zm5.8 14.07c-.25.7-1.45 1.33-2 1.4-.52.08-1.17.1-1.9-.12-.44-.14-1-.33-1.72-.65-3.03-1.3-5-4.37-5.15-4.57-.15-.2-1.23-1.63-1.23-3.1s.78-2.2 1.05-2.5c.27-.3.6-.37.8-.37h.57c.18 0 .43-.07.67.52.25.6.85 2.07.92 2.22.08.15.13.32.03.52-.1.2-.15.32-.3.5-.15.17-.32.38-.45.5-.15.15-.3.3-.13.6.17.3.77 1.27 1.65 2.05 1.13 1 2.08 1.3 2.38 1.45.3.15.47.12.65-.07.17-.2.75-.87.95-1.17.2-.3.4-.25.67-.15.28.1 1.75.83 2.05.98.3.15.5.22.57.35.08.12.08.72-.17 1.42z"/></svg><span>SÍ VOY A ASISTIR</span></a>
-        <a class="rsvp-btn rsvp-no" id="btnNo" href="#" target="_blank" rel="noopener"><svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1 0 12.04 2zm5.8 14.07c-.25.7-1.45 1.33-2 1.4-.52.08-1.17.1-1.9-.12-.44-.14-1-.33-1.72-.65-3.03-1.3-5-4.37-5.15-4.57-.15-.2-1.23-1.63-1.23-3.1s.78-2.2 1.05-2.5c.27-.3.6-.37.8-.37h.57c.18 0 .43-.07.67.52.25.6.85 2.07.92 2.22.08.15.13.32.03.52-.1.2-.15.32-.3.5-.15.17-.32.38-.45.5-.15.15-.3.3-.13.6.17.3.77 1.27 1.65 2.05 1.13 1 2.08 1.3 2.38 1.45.3.15.47.12.65-.07.17-.2.75-.87.95-1.17.2-.3.4-.25.67-.15.28.1 1.75.83 2.05.98.3.15.5.22.57.35.08.12.08.72-.17 1.42z"/></svg><span>NO PODRÉ ASISTIR</span></a>
+        <a class="rsvp-btn rsvp-yes" id="btnYes" href="#" target="_blank" rel="noopener">
+          <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1 0 12.04 2zm5.8 14.07c-.25.7-1.45 1.33-2 1.4-.52.08-1.17.1-1.9-.12-.44-.14-1-.33-1.72-.65-3.03-1.3-5-4.37-5.15-4.57-.15-.2-1.23-1.63-1.23-3.1s.78-2.2 1.05-2.5c.27-.3.6-.37.8-.37h.57c.18 0 .43-.07.67.52.25.6.85 2.07.92 2.22.08.15.13.32.03.52-.1.2-.15.32-.3.5-.15.17-.32.38-.45.5-.15.15-.3.3-.13.6.17.3.77 1.27 1.65 2.05 1.13 1 2.08 1.3 2.38 1.45.3.15.47.12.65-.07.17-.2.75-.87.95-1.17.2-.3.4-.25.67-.15.28.1 1.75.83 2.05.98.3.15.5.22.57.35.08.12.08.72-.17 1.42z"/>
+          </svg>
+          <span>SÍ VOY A ASISTIR</span>
+        </a>
+
+        <a class="rsvp-btn rsvp-no" id="btnNo" href="#" target="_blank" rel="noopener">
+          <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1 0 12.04 2zm5.8 14.07c-.25.7-1.45 1.33-2 1.4-.52.08-1.17.1-1.9-.12-.44-.14-1-.33-1.72-.65-3.03-1.3-5-4.37-5.15-4.57-.15-.2-1.23-1.63-1.23-3.1s.78-2.2 1.05-2.5c.27-.3.6-.37.8-.37h.57c.18 0 .43-.07.67.52.25.6.85 2.07.92 2.22.08.15.13.32.03.52-.1.2-.15.32-.3.5-.15.17-.32.38-.45.5-.15.15-.3.3-.13.6.17.3.77 1.27 1.65 2.05 1.13 1 2.08 1.3 2.38 1.45.3.15.47.12.65-.07.17-.2.75-.87.95-1.17.2-.3.4-.25.67-.15.28.1 1.75.83 2.05.98.3.15.5.22.57.35.08.12.08.72-.17 1.42z"/>
+          </svg>
+          <span>NO PODRÉ ASISTIR</span>
+        </a>
       </div>
     </div>
 
   </div>
 </div>
-
 
 <!-- Ventana: ¿asisten todos? -->
 <div class="modal-overlay" id="rsvpModal" hidden>
@@ -862,7 +1164,9 @@
       <p class="modal-hint">Escriba solo el número, por ejemplo: 2</p>
       <p class="modal-error" id="countError" role="alert" hidden>Por favor escriba un número válido de personas.</p>
       <div class="modal-actions">
-        <button type="button" class="modal-btn modal-btn-primary" id="btnSendCount"><span>ENVIAR POR WHATSAPP</span></button>
+        <button type="button" class="modal-btn modal-btn-primary" id="btnSendCount">
+          <span>ENVIAR POR WHATSAPP</span>
+        </button>
         <button type="button" class="modal-btn modal-btn-secondary" id="btnBack">VOLVER</button>
       </div>
     </div>
@@ -877,10 +1181,15 @@
   function link(msg) {
     return 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(msg);
   }
+
   function openWhatsApp(url) {
     var a = document.createElement('a');
-    a.href = url; a.target = '_blank'; a.rel = 'noopener';
-    document.body.appendChild(a); a.click(); a.remove();
+    a.href = url;
+    a.target = '_blank';
+    a.rel = 'noopener';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
   }
 
   // Botón "No podré asistir": directo a WhatsApp
@@ -898,13 +1207,19 @@
     stepAll.hidden = which !== 'all';
     stepCount.hidden = which !== 'count';
     if (which === 'all') document.getElementById('btnAllYes').focus();
-    if (which === 'count') { input.value = ''; errorBox.hidden = true; input.focus(); }
+    if (which === 'count') {
+      input.value = '';
+      errorBox.hidden = true;
+      input.focus();
+    }
   }
+
   function openModal() {
     lastFocus = document.activeElement;
     modal.hidden = false;
     showStep('all');
   }
+
   function closeModal() {
     modal.hidden = true;
     if (lastFocus && lastFocus.focus) lastFocus.focus();
@@ -922,26 +1237,44 @@
   });
 
   // Solo algunos: pedir la cantidad
-  document.getElementById('btnAllNo').addEventListener('click', function () { showStep('count'); });
-  document.getElementById('btnBack').addEventListener('click', function () { showStep('all'); });
+  document.getElementById('btnAllNo').addEventListener('click', function () {
+    showStep('count');
+  });
+
+  document.getElementById('btnBack').addEventListener('click', function () {
+    showStep('all');
+  });
 
   input.addEventListener('input', function () {
     input.value = input.value.replace(/\D/g, '');
     errorBox.hidden = true;
   });
+
+  // CAMBIO 1: Mensaje corregido con espacio entre número y personas.
   function sendCount() {
     var n = parseInt(input.value, 10);
-    if (!(n >= 1 && n <= 99)) { errorBox.hidden = false; input.focus(); return; }
-    openWhatsApp(link(BASE + '. Asistiremos ' + n + 'personas. '));
+
+    if (!(n >= 1 && n <= 99)) {
+      errorBox.hidden = false;
+      input.focus();
+      return;
+    }
+
+    openWhatsApp(link(BASE + '. Asistiremos ' + n + (n === 1 ? ' persona.' : ' personas.')));
     closeModal();
   }
+
   document.getElementById('btnSendCount').addEventListener('click', sendCount);
-  input.addEventListener('keydown', function (e) { if (e.key === 'Enter') sendCount(); });
+
+  input.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') sendCount();
+  });
 
   // Cerrar: botón Cancelar, clic fuera o tecla Esc
   modal.addEventListener('click', function (e) {
     if (e.target === modal || e.target.hasAttribute('data-close')) closeModal();
   });
+
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && !modal.hidden) closeModal();
   });
@@ -984,8 +1317,8 @@
     });
 
     // ---------- Desplazamiento automático suave mientras suena la música ----------
-    var SCROLL_SPEED = 20;     // píxeles por segundo (más bajo = más lento)
-    var RESUME_DELAY = 500;    // milisegundos de espera al soltar la pantalla
+    var SCROLL_SPEED = 20;
+    var RESUME_DELAY = 500;
     var auto = false, holding = false, cooldownUntil = 0;
     var pos = 0, lastSet = 0, lastT = 0;
 
@@ -994,7 +1327,12 @@
       var dt = Math.min(t - lastT, 50) / 1000;
       lastT = t;
       var y = window.pageYOffset || document.documentElement.scrollTop || 0;
-      if (Math.abs(y - lastSet) > 3) { pos = y; lastSet = y; }   // la persona movió la pantalla
+
+      if (Math.abs(y - lastSet) > 3) {
+        pos = y;
+        lastSet = y;
+      }
+
       if (!holding && t >= cooldownUntil) {
         var max = document.documentElement.scrollHeight - window.innerHeight;
         if (pos < max) {
@@ -1003,36 +1341,83 @@
           lastSet = pos;
         }
       } else {
-        pos = y; lastSet = y;
+        pos = y;
+        lastSet = y;
       }
+
       requestAnimationFrame(tick);
     }
+
     function startAuto() {
       if (auto) return;
       auto = true;
-      pos = window.pageYOffset || 0; lastSet = pos;
+      pos = window.pageYOffset || 0;
+      lastSet = pos;
       lastT = performance.now();
       requestAnimationFrame(tick);
     }
-    function stopAuto() { auto = false; }
+
+    function stopAuto() {
+      auto = false;
+    }
 
     function release(e) {
       if (e && e.touches && e.touches.length > 0) return;
       holding = false;
       cooldownUntil = performance.now() + RESUME_DELAY;
     }
-    document.addEventListener('touchstart', function () { holding = true; }, { passive: true });
+
+    document.addEventListener('touchstart', function () {
+      holding = true;
+    }, { passive: true });
+
     document.addEventListener('touchend', release, { passive: true });
     document.addEventListener('touchcancel', release, { passive: true });
-    document.addEventListener('mousedown', function () { holding = true; });
+
+    document.addEventListener('mousedown', function () {
+      holding = true;
+    });
+
     document.addEventListener('mouseup', release);
     window.addEventListener('blur', release);
-    window.addEventListener('wheel', function () { cooldownUntil = performance.now() + 1200; }, { passive: true });
 
-    audio.addEventListener('play', function () { setPlaying(true); startAuto(); });
-    audio.addEventListener('pause', function () { setPlaying(false); stopAuto(); });
-    audio.addEventListener('ended', function () { audio.currentTime = 0; setPlaying(false); stopAuto(); });
+    window.addEventListener('wheel', function () {
+      cooldownUntil = performance.now() + 1200;
+    }, { passive: true });
+
+    audio.addEventListener('play', function () {
+      setPlaying(true);
+      startAuto();
+    });
+
+    audio.addEventListener('pause', function () {
+      setPlaying(false);
+      stopAuto();
+    });
+
+    audio.addEventListener('ended', function () {
+      audio.currentTime = 0;
+      setPlaying(false);
+      stopAuto();
+    });
+
+    // CAMBIO 3: Pausar la música al salir o cambiar de pestaña.
+    function pauseWhenLeaving() {
+      if (!audio.paused) {
+        audio.pause();
+      }
+    }
+
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) {
+        pauseWhenLeaving();
+      }
+    });
+
+    window.addEventListener('pagehide', pauseWhenLeaving);
+
   })();
 </script>
+
 </body>
 </html>
